@@ -1,0 +1,51 @@
+### Ver todos los juegos en el catalogo
+GET http://localhost:8000/juegos
+
+### Buscar un juego por su ID 
+GET http://localhost:8000/juegos/7
+
+### Buscar juegos solamente por nombre "..."
+GET http://localhost:8000/juegos?nombre=Dota 2
+
+### Buscar juegos solamente por su género/categoría
+GET http://localhost:8000/juegos?generos=Free to Play
+
+### Buscar por palabra/frase que se encuentre en diferentes categorias (nombre, descripcion, generos, editores, etc.)
+GET http://localhost:8000/juegos?buscar=mujer
+
+### 
+GET http://localhost:8000/juegos?buscar=Studios
+
+
+### Buscar por varias palabras por separado que se encuentren en diferentes categorias
+GET http://localhost:8000/juegos?busquedas=MMO,mujer
+
+
+### Borrar todos los juegos (no tocar)
+DELETE http://localhost:8000/juegos/1
+
+
+### Borrar juego por ID (no tocar)
+DELETE http://localhost:8000/juegos/e80c1890-2a5d-4ef8-963a-c72a68fbfc59
+
+### Añadir nuevo juego 
+POST http://127.0.0.1:8000/juegos
+Content-Type: application/json 
+
+{
+  "id": "",
+  "nombre" : "juegoprueba",
+  "precio" : 300.00
+}
+
+
+
+### Editar datos de un juego
+PUT http://127.0.0.1:8000/juegos/628da229-5c0a-4b67-961a-cbc60b822390
+Content-Type: application/json
+
+{
+  "id": "22",
+    "nombre": "juegoprueba22",
+    "precio": 300
+}

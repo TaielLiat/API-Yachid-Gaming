@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/añadir-juego.css">
+    <link rel="icon" href="sources/Logo API.png">
+    <title>Añadir Juego</title>
+</head>
+
+<header>
+    <div class="header">
+        <div class="contenedor-header">
+            <a href="./index.html"><img src="sources/Logo.png"></a>
+            <div class="botones-de-gomita">
+                <div class="boton">
+                    <a href="./index.html"><button> JUEGOS
+                    <i class="fa-solid fa-gamepad"></i>
+                    </button>
+                </a>
+                </div>
+                <div class="boton">
+                    <a href="./buscador.html"><button> BUSCAR 
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </a>
+                </div>
+                <div class="boton">
+                    <a href="./añadir-juego.html"><button> NUEVO JUEGO
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button></a>
+                </div>
+                <div class="boton" style="margin-left: 25px">
+                    <button> AYUDA Y SOPORTE
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="background">
+        <div class="contenedor ">
+            <form action="/back/dataccess/entry.js" method="post">
+                <div class="formulario">
+                    <h1 style="text-transform: uppercase;"> Crear nuevo <span style="color:salmon; font-size: 30px">videojuego </span></h1>\
+                    <!--------------------------->
+                    <div style="display: flex">
+                        <h5>Nombre</h5>
+                        <h5 style="margin-left: 710px;">Precio</h5>
+                        <h5 style="margin-left: 120px;"> Fecha de Lanzamiento </h5>
+                    </div>
+                    <div style="display: flex">
+                        <input type="text" name="nombre" style="width: 60%;  margin-right: 5%;">
+                        <h4 style="margin-top: 10px;"> $</h4> <input type="number" name="precio" style="width: 10%; margin-right: 5%;" placeholder="9999.99">
+                        <input type="date" name="fechaDelanzamiento" style="width: 20%; text-align: center;">
+                    </div>
+                    <!--------------------------->
+                    <h5>Descripción</h5>
+                    <textarea name="descripcion" cols="70" rows="7" style="resize: none;"></textarea>
+                    <!--------------------------->
+                    <h5>Descripción en Slider</h5>
+                    <textarea name="descripcionSlider" cols="70" rows="4" maxlength="450" style="resize: none; "></textarea><br>
+                    <span>máximo de caracteres: 450</span><br>
+                    <!--------------------------->
+                    <h5>Categorías</h5>
+                    <input type="checkbox" name="free"> Free to play
+                    <input type="checkbox" name="accion"> Acción
+                    <input type="checkbox" name="aventura"> Aventura
+                    <input type="checkbox" name="carreras"> Carreras
+                    <input type="checkbox" name="deportes"> Deportes
+                    <input type="checkbox" name="estrategia"> Estrategia
+                    <input type="checkbox" name="mmo"> Multijugador masivo
+                    <input type="checkbox" name="rol"> Rol
+                    <input type="checkbox" name="simulador"> Simulador
+                    <!--------------------------->
+
+                    <!--------------------------->
+                    <div class="flex">
+                        <h5> Desarrollador </h5>
+                        <h5 style="margin-left: 250px;"> Editor </h5>
+                        <h5 style="margin-left: 360px;"> Franquicia </h5>
+                    </div>
+                    <input type="text" name="desarrollador" list="desarrolladores" style="width: 29.5%; margin-right: 49px">
+                    <input type="text" name="editor" list="editores" style="width: 29.5%; margin-right: 49px">
+                    <input type="text" name="franquicia" list="franquicias" style="width: 29.5%">
+
+                    <datalist id="desarrolladores">
+                <option value="343 Industries"></option>
+                <option value="Activision Blizzard"></option>
+                <option value="Aspyr (Linux)"></option>
+                <option value="Aspyr (Mac)"></option>
+                <option value="Bandai Namco"></option>
+                <option value="Bethesda Game Studios"></option>
+                <option value="Creepy Jar"></option>
+                <option value="Efecto Studio"></option>
+                <option value="Electronic Arts"></option>
+                <option value="Epic Games"></option>
+                <option value="FromSoftware, Inc"></option>
+                <option value="Gearbox Software"></option>
+                <option value="Guerrilla Games"></option>
+                <option value="Hello Games"></option>
+                <option value="Instinct Games"></option>
+                <option value="Iron Gate AB"></option>
+                <option value="Larian Studios"></option>
+                <option value="Naughty Dog"></option>
+                <option value="Ninja Theory"></option>
+                <option value="Nintendo"></option>
+                <option value="Quantic Dream"></option>
+                <option value="Riot Games"></option>
+                <option value="Santa Monica Studio"></option>
+                <option value="Sega"></option>
+                <option value="Sony Interactive Entertainment"></option>
+                <option value="Square Enix"></option>
+                <option value="Studio Wildcard"></option>
+                <option value="Supercell"></option>
+                <option value="Techland"></option>
+                <option value="Tencent"></option>
+                <option value="Ubisoft"></option>
+                <option value="Valve"></option>
+                <option value="Virtual Basement LLC"></option>
+                <option value="Xbox Game Studios"></option>
+            </datalist>
+                    <datalist id="editores">
+                <option value="2k"></option>
+                <option value="Aspyr (Linux)"></option>
+                <option value="Aspyr (Mac)"></option>
+                <option value="BANDAI NAMCO Entertainment"></option>
+                <option value="Bethesda Game Studios"></option>
+                <option value="Creepy Jar"></option>
+                <option value="Coffee Stain Publishing"></option>
+                <option value="FromSoftware, Inc"></option>
+                <option value="Hello Games"></option>
+                <option value="Larian Studios"></option>
+                <option value="PlayStation PC LLC"></option>
+                <option value="Quantic Dream"></option>
+                <option value="Studio Wildcard"></option>
+                <option value="Techland"></option>
+                <option value="Ubisoft"></option>
+                <option value="Valve"></option>
+            </datalist>
+                </div>
+                <div class="formulario2">
+                    <!--------------------------->
+                    <h1> Fuentes </h1>
+                    <fieldset>
+                        <legend> Imágenes</legend>
+                        <div class="imagenes">
+                            <h4> Página principal: </h4>
+                            <h5> Slider: </h5>
+                            <h5> Catálogo: </h5>
+                        </div>
+                        <input type="file" name="imgPathV">
+                        <input type="file" name="imgSliderPath">
+                        <input type="file" name="imgPathH">
+                    </fieldset>
+                    <h5> URL Video: </h5>
+                    <input type="url" name="videoPath">
+
+                    <h5> Producto Destacado </h5>
+                    <input type="radio" name="productoDestacado" value="true">Si
+                    <input type="radio" name="productoDestacado" value="false" checked>No
+                    <h5> Estado de Oferta</h5>
+                    <input type="radio" name="productoOferta" value="true">Si
+                    <input type="radio" name="productoOferta" value="false" checked>No <br>
+                    <H5> Descuento (%)</H5>
+                    <input type="number" maxlength="3" name="descuento">
+                </div>
+
+                <div class="formulario3">
+                    <h1> Requisitos de Sistema </h1>
+                    <fieldset>
+                        <legend> Requisitos Minimos</legend>
+                        <h5>Dato</h5><input type="text" name="dato" placeholder="Requiere un procesador y un sistema operativo de 32 bits">
+                        <h5>Sistema Operativo</h5><input type="text" name="so" placeholder="Windows 7 o posterior">
+                        <h5>Procesador</h5><input type="text" name="procesador">
+                        <h5>Memoria</h5> <input type="text" name="memoria" placeholder="4 GB de RAM">
+                        <h5>Almacenamiento</h5><input type="text" name="almacenamiento" placeholder="15GB de espacio disponible">
+                        <h5>Gráficos</h5><input type="text" name="graficos">
+                        <h5>Tarjeta de Sonido</h5><input type="text" name="tarjeta_sonido" placeholder="DirectX 9.0c Compatible">
+                    </fieldset>
+                    <fieldset style="margin-top:30px;">
+                        <legend> Requisitos Recomendados</legend>
+                        <h5>Dato</h5><input type="text" name="dato" placeholder="Requiere un procesador y un sistema operativo de 64 bits">
+                        <h5>Sistema Operativo</h5><input type="text" name="so" placeholder="Windows 10 o posterior">
+                        <h5>Procesador</h5><input type="text" name="procesador">
+                        <h5>Memoria</h5> <input type="text" name="memoria" placeholder="8 GB de RAM">
+                        <h5>Almacenamiento</h5><input type="text" name="almacenamiento" placeholder="15GB de espacio disponible">
+                        <h5>Gráficos</h5><input type="text" name="graficos">
+                        <h5>Tarjeta de Sonido</h5><input type="text" name="tarjeta_sonido" placeholder="DirectX 10.0c Compatible">
+                    </fieldset>
+
+                </div>
+                <input type="submit" class="enviar">
+                <input type="reset" class="enviar">
+            </form>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript " src="./js/data.js "></script>
+    <script src="https://kit.fontawesome.com/9f8c08d7db.js " crossorigin="anonymous "></script>
+</body>

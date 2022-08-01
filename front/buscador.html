@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/buscador.css">
+    <link rel="icon" href="sources/Logo API.png">
+
+    <title>Añadir Juego</title>
+</head>
+
+<header>
+    <div class="header">
+        <div class="contenedor-header">
+            <a href="./index.html"><img src="sources/Logo.png"></a>
+            <div class="botones-de-gomita">
+                <div class="boton">
+                    <a href="./index.html"><button> JUEGOS
+                    <i class="fa-solid fa-gamepad"></i>
+                    </button>
+                </a>
+                </div>
+                <div class="boton">
+                    <a href="./buscador.html"><button> BUSCAR 
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </a>
+                </div>
+                <div class="boton">
+                    <a href="./añadir-juego.html"><button> NUEVO JUEGO
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button></a>
+                </div>
+                <div class="boton" style="margin-left: 25px">
+                    <button> AYUDA Y SOPORTE
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="contenedor">
+        <div class="search-wrapper">
+            <label class="buscar" for="search"> Buscar Juegos</label>
+            <input class="search" type="search" id="search" busqueda-datos>
+        </div>
+        <div class="game-cards" datos-juego-cartas-contenedor></div>
+        <template datos-juego-template>
+        <a onclick="redireccion()">
+            <div class="card">
+                <div class="id" datos-id></div>
+                <hr>
+                <div class="nombre" datos-nombre></div>
+                <div class="precio" datos-precio> </div>
+                <div class="generos" datos-generos> </div>
+            </div>
+        </a>
+        </template>
+    </div>
+</body>
+<script>
+    function redireccion() {
+
+    }
+</script>
+<script src="./js/buscador.js" defer></script>
+<script src="https://kit.fontawesome.com/9f8c08d7db.js" crossorigin="anonymous"></script>

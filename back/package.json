@@ -1,0 +1,27 @@
+{
+    "name": "yachid-gaming",
+    "version": "1.0.0",
+    "description": "API de e-Commerce de videojuegos",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node .",
+        "dev": "nodemon ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TaielLiat/API-Yachid-Gaming"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TaielLiat/API-Yachid-Gaming/issues"
+    },
+    "homepage": "https://github.com/TaielLiat/API-Yachid-Gaming#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.1",
+        "http": "^0.0.1-security",
+        "uuid": "^8.3.2"
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="icon" href="sources/Logo API.png">
+    <title>Prueba JSON a API</title>
+</head>
+
+<header>
+    <div class="header">
+        <div class="contenedor-header">
+            <a href="./index.html"><img src="sources/Logo.png"></a>
+            <div class="botones-de-gomita">
+                <div class="boton">
+                    <a href="./index.html"><button> JUEGOS
+                    <i class="fa-solid fa-gamepad"></i>
+                    </button>
+                </a>
+                </div>
+                <div class="boton">
+                    <a href="./buscador.html"><button> BUSCAR 
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </a>
+                </div>
+                <div class="boton">
+                    <a href="./añadir-juego.html"><button> NUEVO JUEGO
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button></a>
+                </div>
+                <div class="boton" style="margin-left: 25px">
+                    <button> AYUDA Y SOPORTE
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="contenedor">
+        <label class="buscar"> Juegos</label>
+        <a href="./añadir-juego.html">
+            <div class="boton">
+                <button> AÑADIR JUEGO
+                    <i class="fa-solid fa-circle-plus"></i>
+            </button>
+            </div>
+        </a>
+        <table class="tabla">
+            <tr>
+                <!-- 1ra fila-->
+                <th> ID </th>
+                <th> NOMBRE</th>
+                <th> PRECIO</th>
+                <th> EDITAR</th>
+                <th> ELIMINAR</th>
+            </tr>
+            <tr>
+                <!-- columnas 2da fila-->
+                <td class="datos" id='id' style="background-color: white ;"> </td>
+                <td class="datos" id='nombre' style="background-color: rgb(255, 247, 242)"></td>
+                <td class="datos" id='precio' style="background-color: white ;"></td>
+                <a href>
+                    <td class="datos" id="editar" style="background-color:  rgb(255, 247, 242)"> </td>
+                </a>
+                <a href>
+                    <td class="datos" id="eliminar" style="background-color: white">
+                    </td>
+                </a>
+            </tr>
+        </table>
+    </div>
+    <!---<form action='/new_note' method='POST'>
+                <input type="text" name="note"><br>
+                <input type="submit" value="Save">
+            </form>-->
+
+    <script type="text/javascript" src="./js/data.js"></script>
+    <script src="https://kit.fontawesome.com/9f8c08d7db.js" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

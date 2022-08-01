@@ -1,0 +1,227 @@
+        * {
+            font-family: sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        /* HEADER INICIO */
+        
+        .header {
+            border-bottom: 2px solid rgba(223, 223, 223, 0.082);
+            /*box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.8);*/
+        }
+        
+        .contenedor-header {
+            /*CENTRA EL CONTENIDO*/
+            display: flex;
+            height: 90px;
+            width: 1300px;
+            margin: 0 auto;
+        }
+        
+        .botones-de-gomita {
+            /*BOX DE LOS BOTONES EN CONJUNTO*/
+            margin: auto 10px;
+            display: flex;
+            width: 1300px;
+            height: 40%;
+        }
+        
+        header .boton {
+            /*BOX DEL BOTON*/
+            width: 40%;
+            height: 100%;
+            text-align: center;
+        }
+        
+        .boton button {
+            /*DISE;O DEL BOTON*/
+            padding: 3px;
+            background: none;
+            border: none;
+            text-shadow: 2px 2px 6px rgba(23, 22, 104, 0.8);
+            font-size: 20px;
+            font-weight: 550;
+            color: rgb(255, 245, 238);
+            cursor: pointer;
+        }
+        
+        .boton button:hover {
+            color: rgb(255, 255, 255);
+        }
+        
+        .contenedor-header img {
+            width: 350px;
+            margin-top: -20px;
+        }
+        /* HEADER FINAL */
+        
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://external-preview.redd.it/D63ZV-GJdsufFosLufHIP1V4H0yi-hLTwi1Z5xxZIvY.jpg?auto=webp&s=24c4ebfd09a48c1391c7ca75706f947838d9987d");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            background-attachment: fixed;
+        }
+        
+        .contenedor {
+            /*CENTRA EL CONTENIDO DEL BODY*/
+            width: 1300px;
+            margin: 0 auto 10px;
+        }
+        /* FORMULARIO */
+        
+        .formulario {
+            margin-top: 75px;
+            padding: 30px;
+            font-size: 19px;
+            background-color: white;
+            border-radius: 30px;
+            padding-bottom: 50px;
+        }
+        
+        span {
+            font-size: 15px;
+        }
+        
+        h1 {
+            font-size: 30px;
+            color: rgb(54, 54, 54);
+            font-family: 'Trebuchet MS';
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h4 {
+            color: rgb(71, 71, 71);
+            margin: 20px 0 3px 10px;
+            font-size: 19px;
+            text-transform: uppercase;
+        }
+        
+        h5 {
+            color: rgb(71, 71, 71);
+            margin: 20px 0px 3px 10px;
+            font-size: 19px;
+            text-transform: uppercase;
+        }
+        
+        textarea {
+            width: 98%;
+            border: 2px solid grey;
+            font-size: 17px;
+            padding: 10px;
+        }
+        
+        textarea:focus {
+            border: 2px solid rgb(255, 156, 145);
+            transition: all 0.5s linear;
+            outline: none;
+        }
+        
+        input {
+            border: none;
+            border-bottom: 2px solid grey;
+            font-size: 20px;
+        }
+        
+        input:focus {
+            border-bottom: 2px solid rgb(255, 156, 145);
+            transition: all 0.5s linear;
+            outline: none;
+        }
+        
+        input[type="text"],
+        input[type="number"],
+        input[type="url"] {
+            width: 99%;
+            height: 40px;
+            padding-left: 10px;
+        }
+        
+        input[type="checkbox"] {
+            margin: 15px 5px 20px 25px;
+            transform: scale(1.5);
+        }
+        
+        input[type="file"] {
+            border: hidden;
+            width: 33%;
+        }
+        
+        input[type="radio"] {
+            margin: 15px 5px 20px 2em;
+            transform: scale(1.5);
+        }
+        
+        .flex {
+            margin-top: 20px;
+            display: flex;
+        }
+        /* ----------------- */
+        
+        .formulario2 {
+            margin-top: 10px;
+            padding: 30px;
+            font-size: 19px;
+            background-color: white;
+            border-radius: 30px;
+            padding-bottom: 50px;
+        }
+        
+        .imagenes {
+            display: flex;
+        }
+        
+        .imagenes h5 {
+            width: 15.3%;
+            margin-left: 220px;
+        }
+        
+        fieldset {
+            padding: 0px 10px 20px;
+            border: 1px solid salmon;
+            border-radius: 30px;
+            border-left: none;
+            border-right: none;
+        }
+        
+        legend {
+            font-size: 23px;
+            color: rgb(54, 54, 54);
+            text-transform: uppercase;
+            text-align: center;
+            border-left: 0px solid white;
+            font-weight: bold;
+            padding: 0 20px 0 20px;
+        }
+        
+        .formulario3 {
+            margin-top: 10px;
+            padding: 30px;
+            font-size: 19px;
+            background-color: white;
+            border-radius: 30px;
+            padding-bottom: 50px;
+        }
+        
+        h2 {
+            font-size: 25px;
+            color: rgb(54, 54, 54);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        
+        .enviar {
+            margin: 20px 0 0 20px;
+            float: right;
+            padding: 15px 2em;
+            font-size: 25px;
+            border-radius: 30px;
+            background-color: salmon;
+        }
+        
+        .enviar:hover {
+            background-color: rgb(36, 36, 36);
+            color: white;
+        }

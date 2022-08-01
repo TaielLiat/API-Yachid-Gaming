@@ -1,0 +1,199 @@
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* HEADER INICIO */
+
+.header {
+    border-bottom: 2px solid rgba(223, 223, 223, 0.082);
+    /*box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.8);*/
+}
+
+.contenedor-header {
+    /*CENTRA EL CONTENIDO*/
+    display: flex;
+    height: 90px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.botones-de-gomita {
+    /*BOX DE LOS BOTONES EN CONJUNTO*/
+    margin: auto 10px;
+    display: flex;
+    width: 1300px;
+    height: 40%;
+}
+
+header .boton {
+    /*BOX DEL BOTON*/
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+
+.boton button {
+    /*DISE;O DEL BOTON*/
+    padding: 3px;
+    background: none;
+    border: none;
+    text-shadow: 2px 2px 6px rgba(23, 22, 104, 0.8);
+    font-size: 20px;
+    font-weight: 550;
+    color: rgb(255, 245, 238);
+    cursor: pointer;
+}
+
+.boton button:hover {
+    color: rgb(255, 255, 255);
+}
+
+.contenedor-header img {
+    width: 350px;
+    margin-top: -20px;
+}
+
+
+/* HEADER FINAL */
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://wallpapercave.com/wp/wp10269514.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.contenedor {
+    /*CENTRA EL CONTENIDO DEL BODY*/
+    width: 1300px;
+    margin: 0px auto 10px;
+}
+
+
+/* CARTAS */
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.buscar {
+    margin: 40px 700px -20px;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: salmon;
+    letter-spacing: 8px;
+}
+
+.buscar::before {
+    content: "BUSCAR JUEGOS";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient( 45deg, transparent 0, transparent 2px, white 2px, white 4px);
+    -webkit-background-clip: text;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+}
+
+.buscar::after {
+    content: "BUSCAR JUEGOS";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient( 135deg, transparent 0, transparent 2px, white 2px, white 4px);
+    -webkit-background-clip: text;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+}
+
+.buscar:hover:before {
+    top: 5px;
+    left: 5px;
+}
+
+.buscar:hover:after {
+    top: -5px;
+    left: -5px;
+}
+
+.search {
+    border: 2px solid rgb(255, 145, 0);
+    background-color: rgb(255, 245, 245);
+    box-shadow: 4px 0px 20px 4px rgb(248, 128, 114, 0.7);
+    padding: 10px;
+    font-size: 19px;
+    outline: none;
+    border-radius: 50px;
+}
+
+.search:hover {
+    background-color: white;
+    background-image: none;
+    outline: none;
+}
+
+.input {
+    font-size: 17px;
+}
+
+.game-cards {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1rem 1.5rem;
+    margin-top: 1rem;
+}
+
+.card {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    font-size: 20px;
+    box-shadow: 4px 0px 10px 4px rgb(248, 128, 114, 0.7);
+}
+
+.card:hover {
+    background-image: repeating-linear-gradient( 135deg, transparent 0, transparent 2px, white 2px, white 4px);
+    background-color: rgb(255, 230, 230);
+}
+
+.card>.id {
+    font-weight: bold;
+    margin-bottom: .25rem;
+}
+
+.card>.nombre {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: salmon
+}
+
+.card>.precio {
+    margin-top: 5px;
+    color: rgb(56, 56, 56);
+}
+
+.hide {
+    display: none;
+}
+
+hr {
+    margin: 5px auto 10px;
+}
+
+.generos {
+    margin-top: 10px;
+}

@@ -1,0 +1,183 @@
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* HEADER INICIO */
+
+.header {
+    border-bottom: 2px solid rgba(223, 223, 223, 0.082);
+    /*box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.8);*/
+}
+
+.contenedor-header {
+    /*CENTRA EL CONTENIDO*/
+    display: flex;
+    height: 90px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.botones-de-gomita {
+    /*BOX DE LOS BOTONES EN CONJUNTO*/
+    margin: auto 10px;
+    display: flex;
+    width: 1300px;
+    height: 40%;
+}
+
+header .boton {
+    /*BOX DEL BOTON*/
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+
+.boton button {
+    /*DISE;O DEL BOTON*/
+    padding: 3px;
+    background: none;
+    border: none;
+    text-shadow: 2px 2px 6px rgba(23, 22, 104, 0.8);
+    font-size: 20px;
+    font-weight: 550;
+    color: rgb(255, 245, 238);
+    cursor: pointer;
+}
+
+.boton button:hover {
+    color: rgb(255, 255, 255);
+}
+
+.contenedor-header img {
+    width: 350px;
+    margin-top: -20px;
+}
+
+
+/* HEADER FINAL */
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/f8af6662605959.5a95b91501023.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.contenedor {
+    /*CENTRA EL CONTENIDO DEL BODY*/
+    width: 1300px;
+    margin: 0 auto 10px;
+}
+
+
+/* BOTON A;ADIR JUEGO */
+
+.contenedor .boton button {
+    /*COPIA DISE;O DEL BOTON DEL HEADER Y MODIFICA*/
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: rgb(228, 228, 228);
+}
+
+.contenedor .boton button:hover {
+    color: white;
+}
+
+.contenedor .boton {
+    padding-top: 20px;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.buscar {
+    margin: 40px 820px 0px;
+    font-size: 55px;
+    position: absolute;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 500px;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: rgb(34, 9, 46);
+    letter-spacing: 8px;
+}
+
+.buscar::before {
+    content: "JUEGOS";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient( 45deg, transparent 0, transparent 2px, white 2px, white 4px);
+    -webkit-background-clip: text;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+}
+
+.buscar::after {
+    content: "JUEGOS";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient( 135deg, transparent 0, transparent 2px, white 2px, white 4px);
+    -webkit-background-clip: text;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+}
+
+.buscar:hover:before {
+    top: 5px;
+    left: 5px;
+}
+
+.buscar:hover:after {
+    top: -5px;
+    left: -5px;
+}
+
+
+/* TABLA INICIO*/
+
+.tabla {
+    background-color: rgb(34, 9, 46);
+    width: 100%;
+    border-radius: 30px;
+    /*box-shadow: 0px 2px 20px rgba(10, 35, 82, 0.178);*/
+    margin-bottom: 100px;
+}
+
+.tabla th {
+    border-bottom: 1px solid rgba(199, 199, 199, 0.116);
+    border: none;
+    padding: 17px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+.tabla td {
+    color: rgb(20, 20, 20);
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.datos li {
+    list-style: none;
+    padding: 30px;
+}
+
+.tabla a:hover {
+    color: rgb(74, 174, 175);
+}
+
+.hide {
+    display: none;
+}
+
+
+/* TABLA FINAL*/
