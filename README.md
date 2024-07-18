@@ -1,4 +1,6 @@
-                                             README Yachid Gaming 
+                                                 Yachid Gaming 
+
+""Mi primer proyecto""
 
 ### INICIALIZACIÓN DE LA API
 Inicialmente la terminal debe estar situada en la carpeta "back"
